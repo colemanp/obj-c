@@ -9,10 +9,25 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>TriangeTest.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>Unit Test Target.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>CDC1B1121F61BE2A00E1D535</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CDC1B1221F61C64300E1D535</key>
 		<dict>
 			<key>primary</key>
 			<true/>

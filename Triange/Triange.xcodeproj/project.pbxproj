@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		CDC1B1171F61BE2A00E1D535 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC1B1161F61BE2A00E1D535 /* main.m */; };
+		CDC1B1261F61C64300E1D535 /* Unit_Test_Target.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC1B1251F61C64300E1D535 /* Unit_Test_Target.m */; };
+		CDC1B14C1F620A8400E1D535 /* angleUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC1B14B1F620A8400E1D535 /* angleUtils.m */; };
+		CDC1B14E1F620C7B00E1D535 /* angleUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC1B14B1F620A8400E1D535 /* angleUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +28,22 @@
 /* Begin PBXFileReference section */
 		CDC1B1131F61BE2A00E1D535 /* Triange */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Triange; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC1B1161F61BE2A00E1D535 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CDC1B1231F61C64300E1D535 /* Unit Test Target.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Unit Test Target.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDC1B1251F61C64300E1D535 /* Unit_Test_Target.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Unit_Test_Target.m; sourceTree = "<group>"; };
+		CDC1B1271F61C64300E1D535 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDC1B14B1F620A8400E1D535 /* angleUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = angleUtils.m; sourceTree = "<group>"; };
+		CDC1B14D1F620AAC00E1D535 /* angleUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = angleUtils.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CDC1B1101F61BE2A00E1D535 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDC1B1201F61C64300E1D535 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				CDC1B1151F61BE2A00E1D535 /* Triange */,
+				CDC1B1241F61C64300E1D535 /* Unit Test Target */,
 				CDC1B1141F61BE2A00E1D535 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				CDC1B1131F61BE2A00E1D535 /* Triange */,
+				CDC1B1231F61C64300E1D535 /* Unit Test Target.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +75,19 @@
 			isa = PBXGroup;
 			children = (
 				CDC1B1161F61BE2A00E1D535 /* main.m */,
+				CDC1B14B1F620A8400E1D535 /* angleUtils.m */,
+				CDC1B14D1F620AAC00E1D535 /* angleUtils.h */,
 			);
 			path = Triange;
+			sourceTree = "<group>";
+		};
+		CDC1B1241F61C64300E1D535 /* Unit Test Target */ = {
+			isa = PBXGroup;
+			children = (
+				CDC1B1251F61C64300E1D535 /* Unit_Test_Target.m */,
+				CDC1B1271F61C64300E1D535 /* Info.plist */,
+			);
+			path = "Unit Test Target";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +110,23 @@
 			productReference = CDC1B1131F61BE2A00E1D535 /* Triange */;
 			productType = "com.apple.product-type.tool";
 		};
+		CDC1B1221F61C64300E1D535 /* Unit Test Target */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDC1B1281F61C64300E1D535 /* Build configuration list for PBXNativeTarget "Unit Test Target" */;
+			buildPhases = (
+				CDC1B11F1F61C64300E1D535 /* Sources */,
+				CDC1B1201F61C64300E1D535 /* Frameworks */,
+				CDC1B1211F61C64300E1D535 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Unit Test Target";
+			productName = "Unit Test Target";
+			productReference = CDC1B1231F61C64300E1D535 /* Unit Test Target.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +137,10 @@
 				ORGANIZATIONNAME = "Patrick Coleman";
 				TargetAttributes = {
 					CDC1B1121F61BE2A00E1D535 = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+					};
+					CDC1B1221F61C64300E1D535 = {
 						CreatedOnToolsVersion = 8.3;
 						ProvisioningStyle = Automatic;
 					};
@@ -110,9 +159,20 @@
 			projectRoot = "";
 			targets = (
 				CDC1B1121F61BE2A00E1D535 /* Triange */,
+				CDC1B1221F61C64300E1D535 /* Unit Test Target */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CDC1B1211F61C64300E1D535 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CDC1B10F1F61BE2A00E1D535 /* Sources */ = {
@@ -120,6 +180,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDC1B1171F61BE2A00E1D535 /* main.m in Sources */,
+				CDC1B14C1F620A8400E1D535 /* angleUtils.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDC1B11F1F61C64300E1D535 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDC1B1261F61C64300E1D535 /* Unit_Test_Target.m in Sources */,
+				CDC1B14E1F620C7B00E1D535 /* angleUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +299,28 @@
 			};
 			name = Release;
 		};
+		CDC1B1291F61C64300E1D535 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Unit Test Target/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "coleman.patrick.Unit-Test-Target";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CDC1B12A1F61C64300E1D535 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Unit Test Target/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "coleman.patrick.Unit-Test-Target";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -246,6 +338,14 @@
 			buildConfigurations = (
 				CDC1B11B1F61BE2A00E1D535 /* Debug */,
 				CDC1B11C1F61BE2A00E1D535 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CDC1B1281F61C64300E1D535 /* Build configuration list for PBXNativeTarget "Unit Test Target" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDC1B1291F61C64300E1D535 /* Debug */,
+				CDC1B12A1F61C64300E1D535 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
