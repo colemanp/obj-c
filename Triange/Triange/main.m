@@ -11,6 +11,7 @@
 
 
 int main(int argc, const char * argv[]) {
+    
     float angleA = 30.0;
     float angleB = 60.0;
     float angleC = remainingAngle( angleA, angleB);
