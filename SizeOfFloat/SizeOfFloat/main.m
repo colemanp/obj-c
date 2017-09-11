@@ -12,5 +12,11 @@ int main(int argc, const char * argv[]) {
     
     printf("%lu\n", sizeof(float));
     
+    printf("largest number or signed short: %d\n", SHRT_MAX);
+    printf("smallest number or signed short: %d\n", SHRT_MIN);
+    
+    printf("largest number or unsigned short: %d\n", USHRT_MAX);
+    
+    
     return 0;
 }
